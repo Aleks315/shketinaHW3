@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Дмитрий Алексеев</title>
+  <link rel="preload" href="fonts/roboto-v20-latin_cyrillic-900.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-v20-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/iconfont.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/banner.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="manifest" href="icons/site.webmanifest">
+  <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="theme-color" content="#ffffff">
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.inputmask.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <section class="popup-container">
+			<form class="popup__form" name="contact-form" action="mail.php" method="post"> <!-- formWithValidation -->
+				<label>
+					* Имя:
+					<input class="popup__item popup__item_name" type="text" name="fio" placeholder="Иван Иванов" required/> <!-- from -->
+				</label>
+
+				<label>
+					* Телефон:
+					<input class="popup__item popup__item_tel" type="tel" name="tel" placeholder="+7(___) ___-____" required/> <!-- where -->
+				</label>
+
+				<label>
+					E-Mail:
+					<input class="popup__item popup__item_email" type="email" name="email" placeholder="Adress@mail.ru" required/> <!-- message -->
+				</label>
+
+				<button class="popup__btn" type="submit">Отправить</button> <!-- validateBtn -->
+			</form>
+
+    <div class="popup__banner-sended">
+      <p class="popup__banner-txt">Данные успешно отправлены!</p>
+      <button type="button" class="popup__banner_btn">Ок</button>
+    </div>
+	</section>
+
+  <header class="header fixed-container flex-container">
+    <button class="header__menu_btn-burger" type="button" name="button"></button>
+
+    <menu class="header__menu">
+      <li class="header__menu_btn-close"></li>
+      <li class="header__menu_item"><a href="#service" class="scroll-link">Услуги</a></li>
+      <li class="header__menu_item"><a href="#portfolio" class="scroll-link">Портфолио</a></li>
+      <li class="header__menu_item"><a href="#value" class="scroll-link">Стоимость</a></li>
+    </menu>
+
+    <div class="header__contacts">
+      <a class="header__tel" href="tel:79811252833">+7 (499) 995-55-77</a>
+
+      <button class="header__btn popup-open">Заказать звонок</button>
+      <a class="icon-phone header__btn-mobile popup-open" href="#"></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="cover">
+      <div class="cover_svg-container">
+        <svg class="cover__svg" width="814" height="100%" viewBox="0 0 814 630" preserveAspectRatio="xMaxYMax slice">
+          <defs>
+            <linearGradient id="PSgrad_0" x1="0%" x2="22.495%" y1="97.437%" y2="0%">
+              <stop offset="0%" stop-color="rgb(255,143,91)" stop-opacity="1" />
+              <stop offset="99%" stop-color="rgb(255,47,150)" stop-opacity="1" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#PSgrad_0)" d="M 395.520,40.407
+            C 502.261,-10.049 602.994,-10.204 687.212,27.671
+            C 771.647,65.238 839.568,140.836 885.703,234.785
+            C 929.973,329.669 929.926,431.584 893.771,630.027
+
+            C 815,630 815,630 0,630
+            C 20,630 20,630 20,630
+
+            C -9.529,560.677 2.954,504.492 27.679,447.950
+            C 52.809,391.326 90.181,334.346 129.419,281.835
+            C 169.063,229.242 210.573,181.118 253.309,140.306
+            C 296.450,99.410 340.817,65.827 395.520,40.407
+            L 395.520,40.407 Z" />
+        </svg>
+      </div>
+
+      <div class="cover__tags">
+        <div class="cover__tags_el-one">{ }</div>
+
+        <div class="cover__tags_el-two">#</div>
+
+        <div class="cover__tags_el-three">&lt;/&gt;</div>
+
+        <div class="cover__tags_el-four">&lt;div&gt;</div>
+
+        <div class="cover__tags_el-five">&lt;div&gt;</div>
+      </div>
+
+      <div class="cover__text-container fixed-container">
+        <div class="cover__wrap flex-container">
+          <div class="cover__pic">
+            <img src="img/photoMan.png" alt="Фото">
+          </div>
+
+          <div class="cover__txt">
+            <hgroup class="cover__hgroup">
+              <h1 class="cover__title">Дмитрий Алексеев</h1>
+              <h2 class="cover__subtitle">Frontend-разработчик и&nbsp;веб-верстальщик</h2>
+            </hgroup>
+
+            <button class="btn btn-color cover__btn popup-open">Узнать больше</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="service">
+      <h2 class="services__title">Что я делаю</h2>
+
+      <ul class="services__list fixed-container flex-container">
+        <li class="services__list_item">
+          <img class="services__list_item-img" src="img/services_icon_1.png" alt="">
+          <p class="services__list_item-txt">Вёрстка лендинг-страниц и сайтов любой сложности</p>
+        </li>
+
+        <li class="services__list_item">
+          <img class="services__list_item-img" src="img/services_icon_2.png" alt="">
+          <p class="services__list_item-txt">Адаптивная вёрстка под все браузеры и устройства</p>
+        </li>
+
+        <li class="services__list_item">
+          <img class="services__list_item-img" src="img/services_icon_3.png" alt="">
+          <p class="services__list_item-txt">Frontend-разработка и программирование</p>
+        </li>
+
+        <li class="services__list_item">
+          <img class="services__list_item-img" src="img/services_icon_4.png" alt="">
+          <p class="services__list_item-txt">Исправление и доработка существующей вёрстки</p>
+        </li>
+      </ul>
+
+      <button class="btn btn-color services__btn popup-open">Узнать стоимость</button>
+    </section>
+
+    <section class="gallery" id="portfolio">
+      <h2 class="gallery__title">Примеры моих работ</h2>
+
+      <div class="slider_container fixed-container">
+        <div class="swiper-button-prev gallery__arrow"></div>
+        <div class="swiper-button-next gallery__arrow"></div>
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper fixed-container">
+            <div class="swiper-slide">
+              <img class="swiper-slide_img" src="img/Galary_img_1.png" alt="Фото главной страницы сайта психолога Веры Антоновой">
+              <p class="swiper-slide_txt">Сайт психолога Веры Антоновой</p>
+            </div>
+
+            <div class="swiper-slide">
+              <img class="swiper-slide_img" src="img/Galary_img_2.png" alt="Фото главной страницы сайта магазина детской одежды">
+              <p class="swiper-slide_txt">Сайт магазина детской одежды</p>
+            </div>
+
+            <div class="swiper-slide">
+              <img class="swiper-slide_img" src="img/Galary_img_3.png" alt="Фото главной страницы сайта магазина 'Рыболов'">
+              <p class="swiper-slide_txt">Сайт магазина «Рыболов»</p>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <button class="btn btn-color gallery__btn popup-open">Заказать проект</button>
+    </section>
+
+    <section class="price" id="value">
+      <div class="price__tags">
+        <div class="price__tags_el-one">{ }</div>
+
+        <div class="price__tags_el-two">#</div>
+
+        <div class="price__tags_el-three">&lt;/&gt;</div>
+
+        <div class="price__tags_el-four">{ }</div>
+
+        <div class="price__tags_el-five">&lt;div&gt;</div>
+      </div>
+
+      <div class="price__container fixed-container flex-container">
+        <h2 class="price__title">
+          Адаптивная вёрстка под все устройства и&nbsp;браузеры от&nbsp;1000&nbsp;рублей всего за&nbsp;4&nbsp;часа.*
+        </h2>
+
+        <small class="price__txt">
+          * Срок и стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.
+        </small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer flex-container">
+    <div class="footer__container flex-container fixed-container">
+      <nav class="footer__nav">
+        <li class="footer__nav_item"><a href="#service" class="scroll-link">Услуги</a></li>
+        <li class="footer__nav_item"><a href="#portfolio" class="scroll-link">Портфолио</a></li>
+        <li class="footer__nav_item"><a href="#value" class="scroll-link">Стоимость</a></li>
+      </nav>
+
+      <ul class="footer__contacts">
+        <li class="icon-phone footer__contacts_icon">
+          <a class="footer__contacts_item" href="tel:79811252833">+7 (499) 995-77-55</a>
+        </li>
+
+        <li class="icon-mail-alt">
+          <a class="footer__contacts_item" href="https://e.mail.ru/compose/?afterReload=1" target="_blank">dmitry@alekseev.com</a>
+        </li>
+      </ul>
+
+      <div class="footer__links-container">
+        <button class="footer__btn popup-open">Заказать звонок</button>
+
+        <ul class="footer__links">
+          <li class="footer__links_item">
+            <a class="link_vk" href="https://vk.com/" target="_blank" aria-label="Кнопка для перехода в социальную сеть Фейсбук"></a>
+          </li>
+
+          <li class="footer__links_item">
+            <a class="link_fb" href="https://www.facebook.com/" target="_blank" aria-label="Кнопка для перехода в социальную сеть Вотсап"></a>
+          </li>
+
+          <li class="footer__links_item">
+            <a class="link_tw" href="https://twitter.com/?lang=ru" target="_blank" aria-label="Кнопка для перехода в социальную сеть Твиттер"></a>
+          </li>
+
+          <li class="footer__links_item">
+            <a class="link_ig" href="https://www.instagram.com/?hl=ru" target="_blank" aria-label="Кнопка для перехода в социальную сеть Инстаграмм"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__copyright">
+      <p>© Дмитрий Алексеев, 2016 – 2018</p>
+    </div>
+  </footer>
+</body>
+
+</html>

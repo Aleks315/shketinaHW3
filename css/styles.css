@@ -1,0 +1,79 @@
+html {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  /* overflow-x: hidden; */
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  overflow-x: hidden;
+
+  background-color: #fbfbfb;
+  color: black;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.429;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+menu,
+ul,
+nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1, h2, h3, p {
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+
+  overflow: hidden;
+
+	width: 1px;
+	height: 1px;
+	padding: 0;
+
+	border: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fixed-container {
+  max-width: 1170px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

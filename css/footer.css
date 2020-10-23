@@ -1,0 +1,241 @@
+.footer {
+  flex-direction: column;
+  padding: 75px 0 0;
+}
+
+.footer__container {
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 65px;
+}
+
+.footer__nav {
+  flex-basis: 33.3%;
+  line-height: 1.8;
+  padding-bottom: 23px;
+  font-size: 18px;
+  color: #99a1b8;
+}
+
+.footer__nav_item {
+  width: max-content;
+  transition: color .3s ease;
+}
+.footer__nav_item:hover {
+  color: #fc557c;
+}
+
+.footer__contacts {
+  flex-basis: 43.3%;
+  padding-bottom: 23px;
+  font-size: 27px;
+}
+
+.footer__links-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 23.3%;
+}
+
+.footer__btn {
+  width: 250px;
+  height: 45px;
+  transition-property: color, background-color;
+  transition: .5s ease;
+  line-height: 43px;
+  cursor: pointer;
+  outline: none;
+  color: #f53f4f;
+  background-color: transparent;
+  border: 1px solid #f82370;
+  text-align: center;
+}
+.footer__btn:hover {
+  background-color: #ff2f96;
+  color: #fff;
+}
+
+.footer__links {
+  display: inline-flex;
+  margin-top: 15px;
+  padding-top: 10px;
+}
+
+.footer__links_item {
+  margin-right: 3px;
+}
+
+
+.link_vk {
+  display: block;
+  width: 49px;
+  height: 49px;
+  background-image: url('../icons/spr_social_links.png');
+  background-position: -1px -1px;
+}
+/* .link_vk:hover {
+  background-position: -1px -60px;
+} */
+
+.link_fb {
+  display: block;
+  width: 49px;
+  height: 49px;
+  background-image: url('../icons/spr_social_links.png');
+  background-position: -56px -1px;
+}
+/* .link_fb:hover {
+  background-position: -56px -60px;
+} */
+
+.link_tw {
+  display: block;
+  width: 49px;
+  height: 49px;
+  background-image: url('../icons/spr_social_links.png');
+  background-position: -109px -1px;
+}
+/*.link_tw:hover {
+   background-position: -109px -60px;
+} */
+
+.link_ig {
+  display: block;
+  width: 49px;
+  height: 49px;
+  background-image: url('../icons/spr_social_links.png');
+  background-position: -165px -1px;
+}
+/* .link_ig:hover {
+  background-position: -165px -60px;
+} */
+
+.footer__copyright {
+  width: 100%;
+  padding: 25px 0;
+  text-align: center;
+  color: #fff;
+  background-color: #31293c;
+}
+
+
+
+.icon-phone {
+  color: #fa0a8f;
+}
+.icon-mail-alt {
+  margin-bottom: 0;
+  color: #fa0a8f;
+}
+.footer__contacts_icon {
+  margin-bottom: 30px;
+}
+.footer__contacts_item {
+  display: inline-block;
+  transition: color .3s ease;
+  font-family: 'roboto';
+  font-size: 25px;
+  color: #000;
+}
+.footer__contacts_item:hover {
+  color: #fc557c;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    padding: 95px 40px 0;
+  }
+  .footer__nav {
+    flex-basis: 28.3%;
+  }
+  .footer__copyright {
+    width: 120%;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .footer {
+    padding: 65px 20px 0;
+  }
+  .footer__container {
+    margin-bottom: 65px;
+  }
+  .footer__nav {
+    flex-basis: 24.3%;
+  }
+  .footer__contacts {
+    font-size: 24px;
+  }
+  .footer__btn {
+    width: 230px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__container {
+    flex-wrap: wrap;
+  }
+  .footer__nav {
+    flex-basis: 45%;
+    margin-bottom: 65px;
+  }
+  .footer__contacts {
+    flex-basis: 55%;
+    margin-bottom: 65px;
+  }
+  .footer__contacts_item {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 40px 20px 0;
+  }
+  .footer__container {
+    margin-bottom: 50px;
+  }
+  .footer__nav {
+    flex-basis: 100%;
+    margin-bottom: 35px;
+    line-height: 2;
+    font-size: 16px;
+  }
+  .footer__contacts {
+    flex-basis: 100%;
+    margin-bottom: 22px;
+  }
+  .footer__links-container {
+    flex-basis: 100%;
+  }
+  .footer__btn {
+    width: 280px;
+    height: 55px;
+    line-height: 50px;
+  }
+  .footer__links {
+    padding-top: 30px;
+  }
+  .footer__copyright {
+    padding: 16px 0;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer__nav {
+    margin-bottom: 15px;
+  }
+  .footer__contacts_icon {
+    margin-bottom: 20px;
+  }
+  .footer__contacts {
+    margin-bottom: 2px;
+  }
+  .footer__links {
+    padding-top: 10px;
+  }
+}
